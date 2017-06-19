@@ -1,12 +1,78 @@
-html,
-body
+@font-face
+{
+	font-family: 'Flexo';
+	src: url('../assets/font/Flexo/Flexo-Regular.otf');
+}
+
+*
 {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: #EBEBEB;
+	font-family: 'Flexo', sans-serif;
 }
 
+.colorVerde{
+	color:#7aa44a;
+}
+.colorLila{
+	color:#b685c6;
+}
+
+.bg-celeste{
+
+	background-color: #36a4d3;
+	color: #FFF;
+}
+.box-description{
+	margin: 5px 0;
+	font-size: 12px;
+	padding: 9px;
+}
+.colorRosa{
+	color: #ef66b9;
+}
+
+.colorMostaza{
+	color: #a38321;
+}
+.colorGrisClaro{
+	color: #dbdbdb;
+}
+.colorModalfondo{
+	background-color: #edecec;
+}
+/*.color*/
+/*Gris oscuro letra: #ba5e49*/
+/*Gris iconos : #646464*/
+/*Rojo : #e84848*/
+
+
+.containerSearch{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}
+
+i.lupa{
+	padding-right: 15px;
+	padding-bottom: 17px;
+	font-size: 25px;
+	/*border-bottom: 1px solid gray;*/
+}
+input[type=text]{
+	margin:0;
+}
+input[type=text]:focus:not([readonly]){
+	border-bottom: 1px solid #9e9e9e;
+	box-shadow: none;
+}
+
+.content-btn{
+	display: flex;
+	justify-content: flex-end;
+}
 .center-box
 {
 	width: 100%;
@@ -24,7 +90,63 @@ body
 	-webkit-box-shadow: 0 10px 30px 0px #bbb;
 }
 .title{
-	color:#EF66B9;
+	color: #FF0000;
 }
-
-
+.bg-curva{
+	/* margin-top: 1px; */
+	/* right: 0px; */
+	/* margin: 0 18px; */
+	/* margin: 0 0 0 0; */
+	/* top: -8px; */
+	/* display: inline-block; */
+	/* width: 100%; */
+	height: 38px;
+	background: url(../assets/icon/curva.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	/* background-position-y: 0px; */
+	background-color: #ebebeb;
+}
+.content-image{
+	padding-bottom: 15px;
+	display: flex;
+	/* margin: 0 auto; */
+	background-color: #EBEBEB;
+	justify-content: center;
+	align-items: center;
+}
+.content-info{
+	background-color: white;
+}
+.content-image img{
+	padding-top: 40px;
+	width:150px;
+	height:195px;
+}
+.listIcons{
+	padding: 11px;
+	display: flex;
+	justify-content: center;
+}
+.listIcons a{
+	margin:0 10px;
+}
+a > img{
+	width:17px;
+}
+.buttonAZ,
+.buttonAZ:hover{
+	background-color: #7aa44a;
+}
+.namePoke{
+	text-transform: capitalize;
+}
+.boxCargando{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	background-color: #EBEBEB;
+	height:300px;
+	width: 300px;
+}
